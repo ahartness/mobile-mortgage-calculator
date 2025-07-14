@@ -29,17 +29,17 @@ function App() {
         return monthlyPayment;
     }
 
-    getMonthlyTaxes = () => {
+    const getMonthlyTaxes = () => {
         // Placeholder for future implementation
         return 0;
     }
 
-    getMonthlyInsurance = () => {
+    const getMonthlyInsurance = () => {
         // Placeholder for future implementation
         return 0;
     }
 
-    getMonthlyPMI = () => {
+    const getMonthlyPMI = () => {
         // Placeholder for future implementation
         return 0;
     }
@@ -89,9 +89,26 @@ function App() {
                     />
                 </div>
             </div>
+            <div className="actions">
+                <button onClick={() => {
+                    setHomePrice(400000);
+                    setDownPayment(20);
+                    setDownPaymentType('percent');
+                    setLoadTerm(30);
+                    setInterestRate(6.3);
+                }}>
+                    Reset
+                </button>
+            </div>
             <div className="result">
                 <h2>Monthly Payment: ${getMonthlyPayment().toFixed(2)}</h2>
                 <p>Loan Amount: ${getLoanAmount().toFixed(2)}</p>
+            </div>
+            <div>
+                <h3>Additional Costs (to be implemented)</h3>
+                <p>Monthly Taxes: ${getMonthlyTaxes().toFixed(2)}</p>
+                <p>Monthly Insurance: ${getMonthlyInsurance().toFixed(2)}</p>
+                <p>Monthly PMI: ${getMonthlyPMI().toFixed(2)}</p>
             </div>
         </div>
     )

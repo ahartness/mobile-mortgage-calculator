@@ -3,7 +3,7 @@
 A simple mobile mortgage calculator built with React
 
 ## TODO Features
-- [ ] Add a button to reset the form
+- [x] Add a button to reset the form
 - [ ] calculate the total interest paid
 - [ ] calulate PMI, Insurance, and Taxes
 - [ ] Update the UI to be more mobile friendly
