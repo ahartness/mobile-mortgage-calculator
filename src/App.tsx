@@ -12,7 +12,7 @@ function App() {
         if (downPaymentType === 'cash') {
             return homePrice - downPayment;
         } else {
-            return homePrice - (homePrice)
+            return homePrice - (homePrice * (downPayment / 100));
         }
     }
 
@@ -27,6 +27,21 @@ function App() {
 
         const monthlyPayment = (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -numberOfPayments));
         return monthlyPayment;
+    }
+
+    getMonthlyTaxes = () => {
+        // Placeholder for future implementation
+        return 0;
+    }
+
+    getMonthlyInsurance = () => {
+        // Placeholder for future implementation
+        return 0;
+    }
+
+    getMonthlyPMI = () => {
+        // Placeholder for future implementation
+        return 0;
     }
 
     return (
