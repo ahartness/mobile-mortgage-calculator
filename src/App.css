@@ -33,6 +33,20 @@
   }
 }
 
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.additional-costs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
 .card {
   padding: 2em;
 }
