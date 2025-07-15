@@ -158,7 +158,7 @@ function App() {
                 <h2>Principal + Interest: ${getMonthlyPayment().toFixed(2)}</h2>
                 <p>Loan Amount: ${getLoanAmount().toFixed(2)}</p>
             </div>
-            <div>
+            <div className="additional-costs">
                 <h3>Additional Costs (to be implemented)</h3>
                 <p>Monthly Taxes: ${getMonthlyTaxes().toFixed(2)}</p>
                 <p>Yearly Taxes: ${(getMonthlyTaxes().toFixed(2) * 12).toFixed(2)}</p>
